@@ -1,0 +1,22 @@
+{
+    "RunBenchmark": true,
+    "BenchmarkPath": "./benchmarks/castellini",
+    "InstancePath": "./benchmarks/castellini/toilet_c_02_01.2",
+    "OutputFileName": "benchmark-results5",
+    "SolverOptions": {
+        "SolverType": "dpll",
+        "LiteralSelection": "ordered",
+        "Preprocess": true,
+        "UniversalReduction": true,
+        "PureLiteralDeletion": true,
+        "Restarts": true,
+        "PreResolution": false,
+        "PreResolutionConfig": {
+            "min_ratio": 0.25,
+            "max_ratio": 0.5,
+            "max_clause_length": "infinity",
+            "repeat_above": 3,
+            "iterations": 1
+        }
+    }
+}

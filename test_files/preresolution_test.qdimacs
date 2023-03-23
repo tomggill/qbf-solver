@@ -1,0 +1,5 @@
+c For testing adding resolved clauses to the matrix
+p cnf 3 4
+e 1 2 3 0
+1 2 3 0
+-1 2 3 0
