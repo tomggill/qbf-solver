@@ -10,8 +10,8 @@ The input QBF file format should be in [QDIMACS](http://www.qbflib.org/qdimacs.h
 ```json
 {
     "RunBenchmark": false,
-    "BenchmarkPath": "./benchmarks/castellini",
-    "InstancePath": "./benchmarks/castellini/toilet_c_02_01.2.qdimacs",
+    "BenchmarkPath": "./benchmarks/samples",
+    "InstancePath": "./benchmarks/samples/example.qdimacs",
     "OutputFileName": "instance-results",
     "SolverOptions": {
         "SolverType": "CDCL",
