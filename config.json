@@ -1,6 +1,6 @@
 {
     "RunBenchmark": true,
-    "BenchmarkPath": "./benchmarks/conflict-testing",
+    "BenchmarkPath": "./benchmarks/samples",
     "InstancePath": "./benchmarks/samples/example.qdimacs",
     "OutputFileName": "results",
     "SolverOptions": {
