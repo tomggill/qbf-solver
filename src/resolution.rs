@@ -12,7 +12,7 @@ Note: original_clause_list is passed in when the solver type is CDCL.
 pub fn pre_resolution(matrix: &mut Matrix, original_clause_list: &mut Vec<Clause>) {
     let mut clause_hashtable = HashSet::new();
     clause_hashtable.extend(matrix.clause_set.clause_list.clone());
-    let resolution_config = &matrix.config.pre_resolution.1;
+    let resolution_config = matrix.config.pre_resolution.1.clone();
 
     let clause_list = &mut matrix.clause_set.clause_list.clone();
     let clause_references = &mut matrix.clause_references.clone();

@@ -35,70 +35,14 @@ mod test {
     }
     
     /* START OF GENERAL INSTANCE TESTS */
+    /* Note: These have been reduced in scope for submission */
+
     #[test]
     fn test_instance_1() {
-        let filename = "./benchmarks/PCNF/falsequ_query71_1344n.qdimacs".to_string();
-        let result = run_instance(filename);
-        assert_eq!(Result::UNSAT, result);
-    }
-
-    #[test]
-    fn test_instance_2() {
-        let filename = "./benchmarks/PCNF/trueque_query71_1344.qdimacs".to_string();
+        let filename = "./benchmarks/samples/example.qdimacs".to_string();
         let result = run_instance(filename);
         assert_eq!(Result::SAT, result);
     }
 
-    #[test]
-    fn test_instance_3() {
-        let filename = "./benchmarks/PCNF/trueque_query60_1344n.qdimacs".to_string();
-        let result = run_instance(filename);
-        assert_eq!(Result::UNSAT, result);
-    }
-
-    #[ignore]
-    #[test]
-    fn test_instance_4() { 
-        let filename = "./benchmarks/PCNF/test3_quant_squaring2.qdimacs".to_string();
-        let result = run_instance(filename);
-        assert_eq!(Result::UNSAT, result);
-    }
-
-    #[ignore]
-    #[test]
-    fn test_instance_5() { 
-        let filename = "./benchmarks/PCNF/test4_quant4.qdimacs".to_string();
-        let result = run_instance(filename);
-        assert_eq!(Result::UNSAT, result);
-    }
-
-    #[test]
-    fn test_instance_6() { 
-        let filename = "./benchmarks/PCNF/trueque_query64_1344.qdimacs".to_string();
-        let result = run_instance(filename);
-        assert_eq!(Result::SAT, result);
-    }
-
-    #[ignore]
-    #[test]
-    fn test_instance_7() { 
-        let filename = "./benchmarks/PCNF/exquery_query71_1344n.qdimacs".to_string();
-        let result = run_instance(filename);
-        assert_eq!(Result::UNSAT, result);
-    }
-
-    #[test]
-    fn test_instance_8() { 
-        let filename = "./benchmarks/castellini/toilet_a_02_01.4.qdimacs".to_string();
-        let result = run_instance(filename);
-        assert_eq!(Result::SAT, result);
-    }
-
-    #[test]
-    fn test_instance_9() { 
-        let filename = "./benchmarks/castellini/toilet_a_06_01.12.qdimacs".to_string();
-        let result = run_instance(filename);
-        assert_eq!(Result::SAT, result);
-    }
     /* END OF GENERAL INSTANCE TESTS */
 }

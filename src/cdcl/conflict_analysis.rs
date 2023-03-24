@@ -113,7 +113,9 @@ pub fn calculate_backtrack_level(matrix: &CDCLMatrix, literals: &Vec<i32>, highe
         }
         backtrack_level = cmp::max(backtrack_level, assignment.decision_level);
     }
-    if backtrack_level == -1 { return highest_decision_level - 1 }
+    // Catch edge cases.
+    if backtrack_level == -1 { backtrack_level = highest_decision_level - 1 }
+    if literals.len() > 1 && backtrack_level == 0 { backtrack_level = 1 }
     return backtrack_level
 }
 

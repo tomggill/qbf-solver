@@ -45,7 +45,7 @@ pub fn run_bench_group(group: String, config: Config, filename_to_write: &str) {
         let stats = statistic_database.get(&key).unwrap();
         output_string += &format!("\nInstance: {} -- Runtime: {:?} -- Result: {:?}  -- Propagations: {}, Backtracks: {}", key, val, stats.2, stats.0, stats.1);
     }
-    let pathname = format!("results-{}", filename_to_write);
+    let pathname = format!("output-{}", filename_to_write);
     fs::write(pathname, output_string).expect("Unable to write file");
 }
 
@@ -82,7 +82,7 @@ pub fn run_clause_variable_ratio_instances(config: Config, filename_to_write: &s
     for (key, value) in ratios {
         output_string += &format!("\nSums: ({}, {}) -> {:?}", key.0, key.1, value.iter().sum::<Duration>());
     }
-    let pathname = format!("results-{}", filename_to_write);
+    let pathname = format!("output-{}", filename_to_write);
     fs::write(pathname, output_string).expect("Unable to write file");
 }
 

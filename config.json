@@ -1,11 +1,11 @@
 {
     "RunBenchmark": true,
-    "BenchmarkPath": "./benchmarks/castellini",
-    "InstancePath": "./benchmarks/castellini/toilet_c_02_01.2",
-    "OutputFileName": "benchmark-results5",
+    "BenchmarkPath": "./benchmarks/conflict-testing",
+    "InstancePath": "./benchmarks/samples/example.qdimacs",
+    "OutputFileName": "results",
     "SolverOptions": {
-        "SolverType": "dpll",
-        "LiteralSelection": "ordered",
+        "SolverType": "cdcl",
+        "LiteralSelection": "vss",
         "Preprocess": true,
         "UniversalReduction": true,
         "PureLiteralDeletion": true,
