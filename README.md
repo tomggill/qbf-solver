@@ -1,6 +1,8 @@
 # QBF Solver Evaluator
 This tool is a solver for quantified Boolean formulas (QBF) in prenex conjunctive normal form (PCNF) in the [QDIMACS](http://www.qbflib.org/qdimacs.html) format. This tool contains functionality for the Davis-Putnam-Logemann-Loveland (DPLL) and Conflict Driven Clause Learning (CDCL) backtracking algorithms with optimisation techniques. Solver configuration is customisable.
 
+See - [Dissertation](https://github.com/tomggill/qbf-solver/blob/main/Analysing_Optimisation_and_Solving_Techniques_in_QBF_Solvers.pdf)
+
 ## Installation
 This tool is written in [Rust](https://www.rust-lang.org/). You can download the latest version of the Rust compiler [here](https://rustup.rs/), alternatively you can follow the instructions in the [rust docs](https://doc.rust-lang.org/cargo/getting-started/installation.html). The tool is written as a rust crate so no static binaries are created. To build the tool use ```cargo build --release``` then run the tool using ```cargo run --release```.
 
