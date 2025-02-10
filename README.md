@@ -48,7 +48,7 @@ The input QBF file format should be in [QDIMACS](http://www.qbflib.org/qdimacs.h
 
 ```Preprocess, UniversalReduction, PureLiteralDeletion, Restarts, PreResolution```: Options to determine whether to use the repective optimisation in the solver.
 
-```PreResolutionConfig```: Contains the hyperparamter values used when performing pre-resolution.
+```PreResolutionConfig```: Contains the hyperparameters used when performing pre-resolution.
 
 ```min_ratio, max_ratio```: The lower and upper bound on how many resolved clauses to add to the clause database.
 
