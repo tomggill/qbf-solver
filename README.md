@@ -7,7 +7,7 @@ See - [Dissertation](https://github.com/tomggill/qbf-solver/blob/main/Analysing_
 This tool is written in [Rust](https://www.rust-lang.org/). You can download the latest version of the Rust compiler [here](https://rustup.rs/), alternatively you can follow the instructions in the [rust docs](https://doc.rust-lang.org/cargo/getting-started/installation.html). The tool is written as a rust crate so no static binaries are created. To build the tool use ```cargo build --release``` then run the tool using ```cargo run --release```.
 
 ## Usage
-The input QBF file format should be in [QDIMACS](http://www.qbflib.org/qdimacs.html) file format. The Output is the result Satisfiable or Unsatisfiable when running the solver on an individual instance. When running the solver on a benchmark of instances, a output file is produced containing statistical data and results. No command line paramters are required as the configuration of the solver is determined from the config.json file. 
+The input QBF file format should be in [QDIMACS](http://www.qbflib.org/qdimacs.html) file format. The output is the result Satisfiable or Unsatisfiable when running the solver on an individual instance. When running the solver on a benchmark of instances, a output file is produced containing statistical data and results. No command line paramters are required as the configuration of the solver is determined from the config.json file. 
 
 ```json
 {
